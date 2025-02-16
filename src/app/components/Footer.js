@@ -1,17 +1,44 @@
+"use client"
+
+import Link from "next/link";
+import { useBlogContext } from "./Context";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+
 export default function Footer() {
+    const { theme } = useBlogContext();
+
     return (
-      <footer className="bg-gray-800 text-white p-6 mt-10">
-        <div className="container mx-auto text-center">
-          <p>&copy; {new Date().getFullYear()} My Awesome Website. All rights reserved.</p>
-          <div className="mt-4">
-            <a href="/privacy" className="text-gray-400 hover:text-white mx-2">
+        <footer
+        className={`py-8 px-4 text-center ${
+          theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+        }`}
+      >
+          <div className="mb-4 flex justify-center space-x-4">
+          <Link href={"https://www.instagram.com/psycho.112_/"} target="_blank" className="text-xl hover:text-pink-500">
+            <FaInstagram/>
+          </Link>
+          <Link href={"#"} className="text-xl hover:text-pink-500">
+            <FaFacebook/>
+          </Link>
+          <Link href={"#"} className="text-xl hidden hover:text-pink-500">
+            📷
+          </Link>
+        </div>
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <p>&copy; 2024 Mindful Moments. All rights reserved.</p>
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <Link href={"#"} className="hover:text-pink-500">
               Privacy Policy
-            </a>
-            <a href="/terms" className="text-gray-400 hover:text-white mx-2">
+            </Link>
+            <Link href={"#"} className="hover:text-pink-500">
               Terms of Service
-            </a>
+            </Link>
+            <Link href={"#contact"} className="hover:text-pink-500">
+              Contact
+            </Link>
           </div>
         </div>
+      
       </footer>
     );
   }
