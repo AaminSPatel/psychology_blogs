@@ -45,6 +45,8 @@ const BlogPage = () => {
 
 <Head>
   <title>{post.title} - Psychology Insights & Mind Tricks</title>
+  
+  <link rel="icon" type="image/png" href="https://psychology-blogs.vercel.app/logo.png" />
   <meta 
     name="description" 
     content={`${post.description} Learn how to improve mental clarity, reduce stress, and gain a deeper understanding of human behavior.`} 
@@ -60,7 +62,7 @@ const BlogPage = () => {
     property="og:description" 
     content={`${post.description} Discover practical ways to master mindfulness and enhance mental well-being.`} 
   />
-  <meta property="og:image" content={ "https://psychology-blogs.vercel.app/default-image.jpg"} />
+  <meta property="og:image" content={ "https://psychology-blogs.vercel.app/logo.png"} />
   <meta property="og:type" content="article" />
   <meta property="og:url" content={`https://psychology-blogs.vercel.app/blog/${post.id}`} />
   <meta property="og:site_name" content="Psychology Blogs" />
@@ -72,7 +74,7 @@ const BlogPage = () => {
     name="twitter:description" 
     content={`${post.description} Learn to master mindfulness and enhance emotional regulation.`} 
   />
-  <meta name="twitter:image" content={ "https://psychology-blogs.vercel.app/default-image.jpg"} />
+  <meta name="twitter:image" content={ "https://psychology-blogs.vercel.app/logo.png"} />
 </Head>
 
       <div

@@ -24,6 +24,7 @@ export default function Home() {
       <Navbar/>
       <Head>
   <title>Psychology Blogs & Manipulation Tricks - Master the Mind</title>
+  <link rel="icon" type="image/png" href="https://psychology-blogs.vercel.app/logo.png" />
   <meta
     name="description"
     content="Discover the secrets of psychology, human behavior, and manipulation tricks. Learn how to influence decisions, decode emotions, enhance communication skills, and master the art of persuasion with proven psychological techniques. Uncover behavioral patterns, cognitive biases, and persuasion strategies used in marketing, business, relationships, and daily life."
@@ -45,7 +46,7 @@ export default function Home() {
   <meta property="og:site_name" content="Psychology Blogs" />
   <meta
     property="og:image"
-    content="https://psychology-blogs.vercel.app/og-image.jpg"
+    content="https://psychology-blogs.vercel.app/logo.png"
   />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -62,7 +63,7 @@ export default function Home() {
   />
   <meta
     name="twitter:image"
-    content="https://psychology-blogs.vercel.app/og-image.jpg"
+    content="https://psychology-blogs.vercel.app/logo.png"
   />
  
 </Head>

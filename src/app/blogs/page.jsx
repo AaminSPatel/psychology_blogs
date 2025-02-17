@@ -54,6 +54,7 @@ const BlogList = () => {
         {/* SEO Metadata */}
       <Head>
         <title>Psychology Blogs & Mind Tricks - Master the Mind</title>
+        <link rel="icon" type="image/png" href="https://psychology-blogs.vercel.app/logo.png" />
         <meta name="description" content="Discover a collection of psychology blogs, mind tricks, and behavioral insights to help you understand and influence human behavior." />
         <meta name="keywords" content="psychology, manipulation tricks, human behavior, persuasion, psychology blogs, influence, mental tricks, psychological tips, behavioral psychology, social psychology, cognitive science, emotional intelligence" />
         <meta name="author" content="Aamin" />
@@ -61,12 +62,12 @@ const BlogList = () => {
         <meta property="og:description" content="Explore the fascinating world of psychology with expert insights, real-life examples, and powerful manipulation techniques." />
         <meta property="og:url" content="https://psychology-blogs.vercel.app/blog" />
         <meta property="og:site_name" content="Psychology Blogs" />
-        <meta property="og:image" content="https://psychology-blogs.vercel.app/og-image.jpg" />
+        <meta property="og:image" content="https://psychology-blogs.vercel.app/logo.png" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Psychology Blogs & Mind Tricks - Master the Mind" />
         <meta name="twitter:description" content="Discover expert insights and powerful psychological techniques to master the mind." />
-        <meta name="twitter:image" content="https://psychology-blogs.vercel.app/og-image.jpg" />
+        <meta name="twitter:image" content="https://psychology-blogs.vercel.app/logo.png" />
       </Head>
       <div
         className={`${
