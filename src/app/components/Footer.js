@@ -33,9 +33,7 @@ export default function Footer() {
             <Link href={"#"} className="hover:text-pink-500">
               Terms of Service
             </Link>
-            <Link href={"#contact"} className="hover:text-pink-500">
-              Contact
-            </Link>
+            
           </div>
         </div>
       

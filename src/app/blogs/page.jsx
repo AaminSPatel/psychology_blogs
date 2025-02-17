@@ -51,19 +51,22 @@ const BlogList = () => {
     <>
       <Navbar />
        {/* Add SEO Metadata */}
-       <Head>
-        <title>Read Psychology Blogs </title>
-        <meta name="description" content='' />
-        <meta name="keywords" content='' />
-        <meta property="og:title" content="Psychology Blogs on Mental Wellness " />
-        <meta property="og:description" content='' />
-        <meta property="og:image" content='' />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://psychology-blogs.vercel.app/blogs`} />
+        {/* SEO Metadata */}
+      <Head>
+        <title>Psychology Blogs & Mind Tricks - Master the Mind</title>
+        <meta name="description" content="Discover a collection of psychology blogs, mind tricks, and behavioral insights to help you understand and influence human behavior." />
+        <meta name="keywords" content="psychology, manipulation tricks, human behavior, persuasion, psychology blogs, influence, mental tricks, psychological tips, behavioral psychology, social psychology, cognitive science, emotional intelligence" />
+        <meta name="author" content="Aamin" />
+        <meta property="og:title" content="Psychology Blogs & Mind Tricks - Master the Mind" />
+        <meta property="og:description" content="Explore the fascinating world of psychology with expert insights, real-life examples, and powerful manipulation techniques." />
+        <meta property="og:url" content="https://psychology-blogs.vercel.app/blog" />
+        <meta property="og:site_name" content="Psychology Blogs" />
+        <meta property="og:image" content="https://psychology-blogs.vercel.app/og-image.jpg" />
+        <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content='' />
-        <meta name="twitter:description" content='' />
-        <meta name="twitter:image" content='' />
+        <meta name="twitter:title" content="Psychology Blogs & Mind Tricks - Master the Mind" />
+        <meta name="twitter:description" content="Discover expert insights and powerful psychological techniques to master the mind." />
+        <meta name="twitter:image" content="https://psychology-blogs.vercel.app/og-image.jpg" />
       </Head>
       <div
         className={`${
@@ -71,7 +74,7 @@ const BlogList = () => {
         } min-h-screen p-6`}
       >
         <div className="container mx-auto">
-          <h1 className="text-4xl font-bold text-center mb-6">
+          <h1 className="text-4xl font-bold text-center mb-6 philosopher">
             Psychology Blogs
           </h1>
 
@@ -147,7 +150,7 @@ const BlogList = () => {
           </div>
 
           {/* Blog Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:pt-10 pt-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-12 sm:pt-10 pt-5">
             {currentBlogs.map((blog) => (
               <motion.div
                 key={blog.id}
@@ -156,10 +159,10 @@ const BlogList = () => {
                 } shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300`}
               >
                 <div className="p-6">
-                  <h2 className="text-xl font-semibold mb-2 line-clamp-1">
+                  <h2 className="text-xl popin font-semibold mb-2 line-clamp-1">
                     {blog.title}
                   </h2>
-                  <p className="mb-4 line-clamp-3">{blog.description}</p>
+                  <p className="mb-4 line-clamp-3 roboto">{blog.description}</p>
                   <Link
                     href={`/blog/${blog.id}`} // Ensure this matches your dynamic route
                     className="inline-block px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition"
@@ -172,7 +175,7 @@ const BlogList = () => {
           </div>
 
           {/* Pagination */}
-          <div className="flex justify-center mt-6 space-x-2">
+          <div className="flex justify-center mt-14 space-x-2">
             {Array.from({ length: totalPages }, (_, index) => (
               <button
                 key={index}

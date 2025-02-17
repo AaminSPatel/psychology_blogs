@@ -42,20 +42,39 @@ const BlogPage = () => {
     <>
       <Navbar />
        {/* Add SEO Metadata */}
-       <Head>
-        <title>{post.title} - My Awesome Blog</title>
-        <meta name="description" content={post.description} />
-        <meta name="keywords" content={''} />
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.description} />
-        <meta property="og:image" content={post.image} />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://mywebsite.com/blog/${id}`} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={post.description} />
-        <meta name="twitter:image" content={post.image} />
-      </Head>
+
+<Head>
+  <title>{post.title} - Psychology Insights & Mind Tricks</title>
+  <meta 
+    name="description" 
+    content={`${post.description} Learn how to improve mental clarity, reduce stress, and gain a deeper understanding of human behavior.`} 
+  />
+  <meta 
+    name="keywords" 
+    content="mindfulness, psychology, mental health, self-improvement, emotional intelligence, brain science, cognitive behavior, stress management, focus, meditation, self-awareness, decision-making, mental clarity, psychology tricks"
+  />
+  
+  {/* Open Graph (OG) for social media */}
+  <meta property="og:title" content={post.title} />
+  <meta 
+    property="og:description" 
+    content={`${post.description} Discover practical ways to master mindfulness and enhance mental well-being.`} 
+  />
+  <meta property="og:image" content={ "https://psychology-blogs.vercel.app/default-image.jpg"} />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content={`https://psychology-blogs.vercel.app/blog/${post.id}`} />
+  <meta property="og:site_name" content="Psychology Blogs" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={post.title} />
+  <meta 
+    name="twitter:description" 
+    content={`${post.description} Learn to master mindfulness and enhance emotional regulation.`} 
+  />
+  <meta name="twitter:image" content={ "https://psychology-blogs.vercel.app/default-image.jpg"} />
+</Head>
+
       <div
         className={`min-h-screen font-sans transition-colors duration-300 ${
           theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-900"
@@ -64,7 +83,7 @@ const BlogPage = () => {
         {/* Blog Section */}
         <section className="container mx-auto px-6 py-12 max-w-3xl">
           <motion.h2
-            className="text-4xl font-bold text-center mb-6"
+            className="text-4xl philosopher font-bold text-center mb-6"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -83,7 +102,7 @@ const BlogPage = () => {
 
           {/* Benefits Section */}
           <motion.div
-            className={`shadow-lg rounded-lg p-6 mb-6 transition-colors duration-300 ${
+            className={`shadow-lg rounded-lg p-6 mb-6 roboto transition-colors duration-300 ${
               theme === "dark" ? "bg-gray-800 text-gray-300" : "bg-white text-gray-700"
             }`}
             initial={{ opacity: 0, y: 20 }}
@@ -105,14 +124,14 @@ const BlogPage = () => {
 
           {/* Example Section */}
           <motion.div
-            className={`shadow-lg rounded-lg p-6 mb-6 transition-colors duration-300 ${
+            className={`shadow-lg roboto rounded-lg p-6 mb-6 transition-colors duration-300 ${
               theme === "dark" ? "bg-gray-800 text-gray-300" : "bg-white text-gray-700"
             }`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
-            <h3 className="text-2xl font-semibold mb-2 flex items-center">
+            <h3 className="text-2xl font-semibold mb-2 flex items-center ">
               <FaHeart className="mr-2 text-pink-500" /> Real-Life Example
             </h3>
             <p>{post.example}</p>
@@ -120,7 +139,7 @@ const BlogPage = () => {
 
           {/* Why It Works Section */}
           <motion.div
-            className={`shadow-lg rounded-lg p-6 transition-colors duration-300 ${
+            className={`shadow-lg roboto rounded-lg p-6 transition-colors duration-300 ${
               theme === "dark" ? "bg-gray-800 text-gray-300" : "bg-white text-gray-700"
             }`}
             initial={{ opacity: 0, y: 20 }}
