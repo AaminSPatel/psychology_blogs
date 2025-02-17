@@ -15,7 +15,9 @@ const geistMono = Geist_Mono({
 // app/layout.js
 export const metadata = {
   title: "Psychology Blogs & Manipulation Tricks - Master the Mind",
-  icon:'https://psychology-blogs.vercel.app/logo.png',
+  icons: {
+    icon: "/logo.png", // Path to your custom favicon
+  },
   description:
     "Explore the fascinating world of psychology and manipulation tricks. Learn how to understand human behavior, influence others, and master the art of persuasion.",
   keywords: [

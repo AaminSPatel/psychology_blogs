@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useBlogContext } from "./Context";
 import { FaMoon, FaSun } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Navbar() {
     const { theme, toggleTheme } = useBlogContext();
@@ -12,7 +13,10 @@ export default function Navbar() {
               theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-gray-900"
             }`}
           >
+            <div className="flex items-center gap-1">
+<Image src='/logo.png' alt="Psychology Blogs & Manipulation Tricks - Master the Mind" height='40' width="40" className="rounded-full "/>
             <h1 className="text-2xl font-bold text-pink-500">Mindful Moments</h1>
+            </div>
       
             <div className="flex items-center justify-center gap-3 px-3">
               <Link href={"/"} className="hover:text-pink-500">

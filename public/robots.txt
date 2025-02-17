@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://psychology-blogs.vercel.app/
+
+# Sitemaps
+Sitemap: https://psychology-blogs.vercel.app/sitemap.xml

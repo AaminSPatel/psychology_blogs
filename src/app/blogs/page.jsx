@@ -51,24 +51,85 @@ const BlogList = () => {
     <>
       <Navbar />
        {/* Add SEO Metadata */}
-        {/* SEO Metadata */}
-      <Head>
-        <title>Psychology Blogs & Mind Tricks - Master the Mind</title>
-        <link rel="icon" type="image/png" href="https://psychology-blogs.vercel.app/logo.png" />
-        <meta name="description" content="Discover a collection of psychology blogs, mind tricks, and behavioral insights to help you understand and influence human behavior." />
-        <meta name="keywords" content="psychology, manipulation tricks, human behavior, persuasion, psychology blogs, influence, mental tricks, psychological tips, behavioral psychology, social psychology, cognitive science, emotional intelligence" />
-        <meta name="author" content="Aamin" />
-        <meta property="og:title" content="Psychology Blogs & Mind Tricks - Master the Mind" />
-        <meta property="og:description" content="Explore the fascinating world of psychology with expert insights, real-life examples, and powerful manipulation techniques." />
-        <meta property="og:url" content="https://psychology-blogs.vercel.app/blog" />
-        <meta property="og:site_name" content="Psychology Blogs" />
-        <meta property="og:image" content="https://psychology-blogs.vercel.app/logo.png" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Psychology Blogs & Mind Tricks - Master the Mind" />
-        <meta name="twitter:description" content="Discover expert insights and powerful psychological techniques to master the mind." />
-        <meta name="twitter:image" content="https://psychology-blogs.vercel.app/logo.png" />
-      </Head>
+       <Head>
+  {/* ✅ Essential Meta Tags */}
+  <title>Psychology Blogs & Manipulation Tricks - Master the Mind</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charSet="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Aamin" />
+  <link rel="canonical" href="https://psychology-blogs.vercel.app" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  
+  {/* ✅ Favicon */}
+  <link rel="icon" type="image/png" href="/logo.png" />
+
+  {/* ✅ Primary SEO Meta Tags */}
+  <meta 
+    name="description" 
+    content="Discover the secrets of psychology, human behavior, and manipulation tricks. Learn persuasion techniques, decode emotions, and enhance communication skills for personal growth, business, and relationships."
+  />
+  <meta 
+    name="keywords" 
+    content="psychology, manipulation tricks, human behavior, persuasion, mind control, psychological tips, behavioral psychology, cognitive biases, emotional intelligence, influence techniques, subconscious mind, mentalism, NLP, body language, sales psychology, leadership, marketing psychology, self-improvement, confidence building"
+  />
+
+  {/* ✅ Open Graph (OG) Meta Tags for Facebook & LinkedIn */}
+  <meta property="og:title" content="Psychology Blogs & Manipulation Tricks - Master the Mind" />
+  <meta property="og:description" content="Unlock the power of psychology and manipulation tricks. Learn persuasion techniques, cognitive biases, and mind control strategies for success in personal and professional life." />
+  <meta property="og:url" content="https://psychology-blogs.vercel.app" />
+  <meta property="og:site_name" content="Psychology Blogs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://psychology-blogs.vercel.app/logo.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  {/* ✅ Twitter Card Meta Tags for Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Psychology Blogs & Manipulation Tricks - Master the Mind" />
+  <meta name="twitter:description" content="Explore psychology and influence tactics. Learn how to manipulate decisions, decode emotions, and master persuasion in marketing, leadership, and relationships." />
+  <meta name="twitter:image" content="https://psychology-blogs.vercel.app/logo.png" />
+
+  {/* ✅ Additional SEO Enhancements */}
+  <meta name="language" content="English" />
+  <meta name="distribution" content="global" />
+  <meta name="rating" content="General" />
+  <meta name="geo.region" content="IND" />
+  <meta name="geo.placename" content="India" />
+
+  {/* ✅ Structured Data (JSON-LD for Rich Snippets) */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Psychology Blogs & Manipulation Tricks",
+      "url": "https://psychology-blogs.vercel.app",
+      "image": "https://psychology-blogs.vercel.app/logo.png",
+      "description": "Unlock the power of psychology and manipulation tricks. Learn persuasion techniques, cognitive biases, and mind control strategies for success in personal and professional life.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Psychology Blogs",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://psychology-blogs.vercel.app/logo.png"
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Aamin"
+      }
+    })}
+  </script>
+
+  {/* ✅ Analytics & Tracking Script */}
+  <script 
+    src="https://cdn.counter.dev/script.js" 
+    data-id="95795ebe-d6a8-4887-abef-7dbb03a06eb2" 
+    data-utcoffset="6"
+  ></script>
+</Head>
+
       <div
         className={`${
           theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-900"

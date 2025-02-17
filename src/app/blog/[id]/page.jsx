@@ -47,6 +47,7 @@ const BlogPage = () => {
   <title>{post.title} - Psychology Insights & Mind Tricks</title>
   
   <link rel="icon" type="image/png" href="https://psychology-blogs.vercel.app/logo.png" />
+  <script src="https://cdn.counter.dev/script.js" data-id="95795ebe-d6a8-4887-abef-7dbb03a06eb2" data-utcoffset="6"></script>
   <meta 
     name="description" 
     content={`${post.description} Learn how to improve mental clarity, reduce stress, and gain a deeper understanding of human behavior.`} 
