@@ -65,17 +65,15 @@ const BlogList = () => {
   <link rel="icon" type="image/png" href="/logo.png" />
 
   {/* ✅ Primary SEO Meta Tags */}
-  <meta 
-    name="description" 
-    content="Discover the secrets of psychology, human behavior, and manipulation tricks. Learn persuasion techniques, decode emotions, and enhance communication skills for personal growth, business, and relationships."
-  />
+  <meta name="description" content="Master the art of persuasion with proven psychological techniques. Our blog explores subconscious influence, social engineering, negotiation skills, and mental tricks used in marketing, leadership, and relationships." />
+
   <meta 
     name="keywords" 
     content="psychology, manipulation tricks, human behavior, persuasion, mind control, psychological tips, behavioral psychology, cognitive biases, emotional intelligence, influence techniques, subconscious mind, mentalism, NLP, body language, sales psychology, leadership, marketing psychology, self-improvement, confidence building"
   />
 
   {/* ✅ Open Graph (OG) Meta Tags for Facebook & LinkedIn */}
-  <meta property="og:title" content="Psychology Blogs & Manipulation Tricks - Master the Mind" />
+  <meta property="og:title" content="Psychology Tricks & Mind Manipulation | Unlock the Power of Influence" />
   <meta property="og:description" content="Unlock the power of psychology and manipulation tricks. Learn persuasion techniques, cognitive biases, and mind control strategies for success in personal and professional life." />
   <meta property="og:url" content="https://psychology-blogs.vercel.app" />
   <meta property="og:site_name" content="Psychology Blogs" />

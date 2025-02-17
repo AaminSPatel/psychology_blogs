@@ -42,42 +42,85 @@ const BlogPage = () => {
     <>
       <Navbar />
        {/* Add SEO Metadata */}
+       <Head>
+      {/* Page Title */}
+      <title>{post.title} - Master Psychology & Influence Techniques</title>
 
-<Head>
-  <title>{post.title} - Psychology Insights & Mind Tricks</title>
+      {/* Favicon */}
+      <link rel="icon" type="image/png" href="https://psychology-blogs.vercel.app/logo.png" />
+
+      {/* Meta Description (Optimized for SEO) */}
+      <meta 
+        name="description" 
+        content={`${post.description} Explore deep psychological insights, cognitive biases, persuasion techniques, and behavioral psychology to improve decision-making, emotional intelligence, and communication skills.`} 
+      />
+
+      {/* Keywords (Highly Relevant for SEO) */}
+      <meta 
+        name="keywords" 
+        content="psychology tricks, cognitive biases, mental manipulation, persuasion techniques, behavioral psychology, mind control, emotional intelligence, subconscious influence, psychological hacks, negotiation skills, leadership psychology, self-improvement, communication mastery, NLP, human behavior, sales psychology, psychology blogs"
+      />
+
+      {/* Robots Meta Tag (Ensure Indexing & Ranking) */}
+      <meta name="robots" content="index, follow" />
+
+      {/* Canonical URL to Avoid Duplicate Content Issues */}
+      <link rel="canonical" href={`https://psychology-blogs.vercel.app/blog/${post.id}`} />
+
+      {/* Open Graph (OG) for Social Media Preview */}
+      <meta property="og:title" content={post.title} />
+      <meta 
+        property="og:description" 
+        content={`${post.description} Learn how psychology and mind tricks shape decisions, behaviors, and influence in marketing, leadership, and personal growth.`} 
+      />
+      <meta property="og:image" content={`https://psychology-blogs.vercel.app/blog-images/${post.id}.jpg`} />
+      <meta property="og:image:alt" content={post.title} />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content={`https://psychology-blogs.vercel.app/blog/${post.id}`} />
+      <meta property="og:site_name" content="Psychology Blogs" />
+      <meta property="og:locale" content="en_US" />
+
+      {/* Twitter Card for Better Twitter Sharing */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={post.title} />
+      <meta 
+        name="twitter:description" 
+        content={`${post.description} Master psychology tricks, influence techniques, and behavioral insights for personal and professional success.`} 
+      />
+      <meta name="twitter:image" content={`https://psychology-blogs.vercel.app/logo.png`} />
+      <meta name="twitter:image:alt" content={post.title} />
+      <meta name="twitter:site" content="@YourTwitterHandle" />
+      <meta name="twitter:creator" content="@YourTwitterHandle" />
+
+      {/* Structured Data (Schema.org for SEO & Rich Results) */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": post.title,
+          "description": post.description,
+          "image": `https://psychology-blogs.vercel.app/logo.png`,
+          "author": {
+            "@type": "Person",
+            "name": "Aamin"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Psychology Blogs",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://psychology-blogs.vercel.app/logo.png"
+            }
+          },
+          "url": `https://psychology-blogs.vercel.app/blog/${post.id}`
+        })}
+      </script>
+
+      {/* Viewport & Charset for Mobile Optimization */}
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charSet="UTF-8" />
+    </Head>
   
-  <link rel="icon" type="image/png" href="https://psychology-blogs.vercel.app/logo.png" />
-  <script src="https://cdn.counter.dev/script.js" data-id="95795ebe-d6a8-4887-abef-7dbb03a06eb2" data-utcoffset="6"></script>
-  <meta 
-    name="description" 
-    content={`${post.description} Learn how to improve mental clarity, reduce stress, and gain a deeper understanding of human behavior.`} 
-  />
-  <meta 
-    name="keywords" 
-    content="mindfulness, psychology, mental health, self-improvement, emotional intelligence, brain science, cognitive behavior, stress management, focus, meditation, self-awareness, decision-making, mental clarity, psychology tricks"
-  />
-  
-  {/* Open Graph (OG) for social media */}
-  <meta property="og:title" content={post.title} />
-  <meta 
-    property="og:description" 
-    content={`${post.description} Discover practical ways to master mindfulness and enhance mental well-being.`} 
-  />
-  <meta property="og:image" content={ "https://psychology-blogs.vercel.app/logo.png"} />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content={`https://psychology-blogs.vercel.app/blog/${post.id}`} />
-  <meta property="og:site_name" content="Psychology Blogs" />
-
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={post.title} />
-  <meta 
-    name="twitter:description" 
-    content={`${post.description} Learn to master mindfulness and enhance emotional regulation.`} 
-  />
-  <meta name="twitter:image" content={ "https://psychology-blogs.vercel.app/logo.png"} />
-</Head>
-
       <div
         className={`min-h-screen font-sans transition-colors duration-300 ${
           theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-900"

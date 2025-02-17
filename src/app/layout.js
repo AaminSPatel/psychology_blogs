@@ -49,9 +49,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Psychology Blogs & Manipulation Tricks - Master the Mind",
+    title: "Master Psychology & Influence | Tricks, Cognitive Biases & Mind Hacks",
     description:
-      "Explore the fascinating world of psychology and manipulation tricks. Learn how to understand human behavior, influence others, and master the art of persuasion.",
+      "Psychological principles shape every aspect of our lives, from marketing campaigns and political speeches to sales strategies and everyday conversations. Our blog uncovers the science behind persuasion, confidence-building, and mentalism tricks. Whether you’re an entrepreneur, student, or professional, these psychology-backed strategies will help you build trust, enhance persuasion skills, and navigate social situations with greater awareness and control.",
     images: ["https://psychology-blogs.vercel.app/logo.png"],
   },
   other: {

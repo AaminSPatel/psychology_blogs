@@ -38,7 +38,7 @@ export default function Home() {
   {/* ✅ Primary SEO Meta Tags */}
   <meta 
     name="description" 
-    content="Discover the secrets of psychology, human behavior, and manipulation tricks. Learn persuasion techniques, decode emotions, and enhance communication skills for personal growth, business, and relationships."
+    content="Unlock the power of psychology and human behavior with our in-depth blogs. From persuasion techniques and cognitive biases to social engineering and emotional intelligence, we break down complex psychological concepts into easy-to-understand insights. Whether you're interested in mastering body language, improving communication skills, or learning psychological tricks used in marketing and sales, our blogs provide actionable knowledge to help you navigate everyday situations with confidence and awareness."
   />
   <meta 
     name="keywords" 
