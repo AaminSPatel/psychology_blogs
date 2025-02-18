@@ -93,12 +93,7 @@ export default function Home() {
     })}
   </script>
 
-  {/* ✅ Analytics & Tracking Script */}
-  <script 
-    src="https://cdn.counter.dev/script.js" 
-    data-id="95795ebe-d6a8-4887-abef-7dbb03a06eb2" 
-    data-utcoffset="6"
-  ></script>
+  <script src="https://cdn.counter.dev/script.js" data-id="95795ebe-d6a8-4887-abef-7dbb03a06eb2" data-utcoffset="6"></script>
 </Head>
 
     <main>
